@@ -18,7 +18,7 @@ class ServicesComponent extends Component{
     }
     render(){
         return(
-            <div style={{minHeight:'130vh'}} className="maincontainer">
+            <div className="maincontainer">
                 <p style={{fontSize:'40px', textAlign:'left'}}><strong>Services</strong></p>
                 <p style={{fontSize:'20px', textAlign:'left'}}>Creating a relationship of trust and a pleasant atmosphere is essential for every successful partnership. Therefore, following aspects are part of all of our projects:</p>
                 {this.state.data.map(d => 

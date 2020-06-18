@@ -28,7 +28,7 @@ function FormControlLabelPlacement() {
 export default class ContactComponent extends Component {
     render() {
         return (
-            <div style={{ textAlign: 'left', position: 'absolute', width: '80vw' }} className="maincontainer">
+            <div style={{ textAlign: 'left'}} className="maincontainer">
                 <div >
                     <p style={{ fontSize: '40px', textAlign: 'left' }}><strong>Contact</strong></p>
                 </div>
