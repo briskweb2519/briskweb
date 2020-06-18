@@ -23,8 +23,8 @@ export default class ContactComponent extends Component {
                 </div>
                 <div>
                     <form>
-                        <TextField style={{ width: '35%', marginRight: '10%' }} id="standard-basic" label="Name" />
-                        <TextField style={{ width: '35%' }} id="standard-basic" label="E-Mail" />
+                        <TextField style={{ width: '40%', marginRight: '10%' }} id="standard-basic" label="Name" />
+                        <TextField style={{ width: '40%' }} id="standard-basic" label="E-Mail" />
                     </form>
                     <div>
                         <FormControlLabelPlacement />
@@ -34,7 +34,7 @@ export default class ContactComponent extends Component {
                         <FormLabel component="legend"><h5>Message</h5></FormLabel>
                         <TextareaAutosize
                             rows={10}
-                            cols={116}
+                            cols={119}
                             defaultValue=""
                         /><br />
                         <Button style={{ marginTop: '2%' }} variant="contained" color="primary">
