@@ -29,12 +29,22 @@ export default function ComplexGrid() {
 
       <Paper className={classes.paper}>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={6} style={{ textAlign: 'center', width: '100%', border: '1px solid' }}>
-            <h1>Nutan Vastra Bhandar</h1>
+          <Grid item xs={12} md={5} style={{ marginTop: '5%', paddingTop: '10%' }}>
+            <h1>SPEEDWELL</h1>
           </Grid>
-          <Grid item xs={12} md={6} style={{ width: '100%', border: '1px solid' }}>
+          <Grid item xs={12} md={5} style={{ marginTop: '5%', paddingTop: '15%' }}>
+            <div className="trans">
+              <img alt="complex" src={Speedwell3} style={{ width: '45%', border: '1px solid' }} />
+            </div>
             <div className="avatar">
-              <img alt="complex" src={Logo} />
+              <div className="trans">
+                <img alt="complex" src={Speedwell2} style={{ width: '40%', border: '1px solid', translate: '135% -150%' }} />
+              </div>
+            </div>
+            <div className="avatar">
+              <div className="trans">
+                <img alt="complex" src={Speedwell1} style={{ width: '40%', border: '1px solid', position: 'absolute', translate: '-2% -160%' }} />
+              </div>
             </div>
           </Grid>
         </Grid>
@@ -42,22 +52,22 @@ export default function ComplexGrid() {
 
       <Paper className={classes.paper}>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={5} style={{ marginTop:'5%', paddingTop: '15%'}}>
+          <Grid item xs={12} md={5} style={{ marginTop: '5%', paddingTop: '15%' }}>
             <div className="trans">
               <img alt="complex" src={Speedwell3} style={{ width: '45%', border: '1px solid' }} />
             </div>
             <div className="avatar">
               <div className="trans">
-                <img alt="complex" src={Speedwell2} style={{ width: '40%', border: '1px solid', translate: '130% -150%' }} />
+                <img alt="complex" src={Speedwell2} style={{ width: '40%', border: '1px solid', translate: '135% -150%' }} />
               </div>
             </div>
             <div className="avatar">
               <div className="trans">
-                <img alt="complex" src={Speedwell1} style={{ width: '40%', border: '1px solid', position: 'absolute', translate: '-10% -160%',marginLeft : '2%'}} />
+                <img alt="complex" src={Speedwell1} style={{ width: '40%', border: '1px solid', position: 'absolute', translate: '-2% -160%' }} />
               </div>
             </div>
           </Grid>
-          <Grid item xs={12} md={5} style={{ marginTop:'5%', paddingTop: '10%'}}>
+          <Grid item xs={12} md={5} style={{ marginTop: '5%', paddingTop: '10%' }}>
             <h1>SPEEDWELL</h1>
           </Grid>
         </Grid>
