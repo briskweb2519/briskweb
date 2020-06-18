@@ -33,6 +33,7 @@
 .avatar {
 	width: 200px;
 	height: 200px;
+	
 	/* box-sizing: border-box; */
 	/* border: 5px white solid; */
 	overflow: hidden;
@@ -40,11 +41,14 @@
 	animation: float 6s ease-in-out infinite;
 }
 
+
+
 .avatar img { width: 100%; height: auto}
 
-/* img{
-	transform: skewY(20deg);
-} */
+.trans{
+	transform: skew(50deg, -15deg);
+	/* transform: rotate(-30deg); */
+}
 .maincontainer{
 	margin-left: 10%;
 	margin-right: 10%;
