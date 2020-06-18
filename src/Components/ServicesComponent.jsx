@@ -37,7 +37,7 @@ function Services(props){
                         <img src={props.data.img} alt = {props.data.name} style={{height:'70px', width:'50%'}}/>
                     </Grid>
                     <Grid item xs={12} md={9} className="gridContent">
-                    <div style={{textAlign:'left'}}>
+                    <div style={{textAlign:'justify'}}>
                         <strong>{props.data.name}</strong><br/><br/>
                         {props.data.description}
                     </div>
