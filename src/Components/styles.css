@@ -37,13 +37,14 @@
 	/* border: 5px white solid; */
 	overflow: hidden;
 	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-	/* transform: skewY(20deg);
-	-ms-transform: skewY(20deg); */
 	animation: float 6s ease-in-out infinite;
 }
 
-img { width: 100%; height: auto; }
+.avatar img { width: 100%; height: auto}
 
+/* img{
+	transform: skewY(20deg);
+} */
 .maincontainer{
 	margin-left: 10%;
 	margin-right: 10%;

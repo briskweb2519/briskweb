@@ -109,7 +109,7 @@ const CreateDrawer = (props) => {
     const classes = styleSheet()
     return (
       <div className={classes.root}>
-        <AppBar position='fixed' style={{backgroundColor: props.status === 'top' ? "transparent" : "white",boxShadow:'none',color: props.status === 'top' ? "white" : "black"}}>
+        <AppBar position='fixed' style={{backgroundColor: props.status === 'top' ? "black" : "white",boxShadow:'none',color: props.status === 'top' ? "white" : "black"}}>
           <Toolbar className={classes.toolbar}>
             <Grid container direction = "row" justify = "space-between" alignItems="center">
               <MenuIcon

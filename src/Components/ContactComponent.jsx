@@ -1,14 +1,25 @@
 import React, { Component } from 'react'
-import { TextField, Radio, Button, RadioGroup, FormControlLabel, FormControl, FormLabel, TextareaAutosize } from '@material-ui/core'
+import { TextField, Radio, Button, Grid, RadioGroup, FormControlLabel, FormControl, FormLabel, TextareaAutosize } from '@material-ui/core'
 
 function FormControlLabelPlacement() {
     return (
-        <FormControl component="fieldset">
+        <FormControl component="fieldset" style={{ width: '100%' }}>
             <FormLabel component="legend"><h5>Project</h5></FormLabel>
-            <RadioGroup row aria-label="position" name="position" defaultValue="top">
-                <FormControlLabel value="1" control={<Radio color="primary" />} label="Website" />
-                <FormControlLabel value="2" control={<Radio color="primary" />} label="Web Application" />
-                <FormControlLabel value="3" control={<Radio color="primary" />} label="Other" />
+            <RadioGroup row aria-label="position" name="position" defaultValue="top" >
+                <Grid container>
+                    <Grid item xs={12} md={4}>
+                        <FormControlLabel value="1" control={<Radio color="primary" />} label="Website" />
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <FormControlLabel value="2" control={<Radio color="primary" />} label="Web Application" />
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <FormControlLabel value="3" control={<Radio color="primary" />} label="Other" />
+                    </Grid>
+                </Grid>
+
+
+
             </RadioGroup>
         </FormControl>
     );
@@ -17,15 +28,23 @@ function FormControlLabelPlacement() {
 export default class ContactComponent extends Component {
     render() {
         return (
-            <div style={{ textAlign: 'left',position: 'absolute' }} className="maincontainer">
+            <div style={{ textAlign: 'left', position: 'absolute', width: '80vw' }} className="maincontainer">
                 <div >
                     <p style={{ fontSize: '40px', textAlign: 'left' }}><strong>Contact</strong></p>
                 </div>
+
                 <div>
                     <form>
-                        <TextField style={{ width: '40%', marginRight: '10%' }} id="standard-basic" label="Name" />
-                        <TextField style={{ width: '40%' }} id="standard-basic" label="E-Mail" />
+                        <Grid container spacing={2}>
+                            <Grid item xs={12} md={6}>
+                                <TextField style={{ width: '80%', marginRight: '10%' }} id="standard-basic" label="Name" />
+                            </Grid>
+                            <Grid item xs={12} md={6}>
+                                <TextField style={{ width: '80%' }} id="standard-basic" label="E-Mail" />
+                            </Grid>
+                        </Grid>
                     </form>
+
                     <div>
                         <FormControlLabelPlacement />
                     </div>
@@ -34,14 +53,13 @@ export default class ContactComponent extends Component {
                         <FormLabel component="legend"><h5>Message</h5></FormLabel>
                         <TextareaAutosize
                             rows={10}
-                            cols={119}
                             defaultValue=""
+                            style={{ width: '90%' }}
                         /><br />
                         <Button style={{ marginTop: '2%' }} variant="contained" color="primary">
                             Send
                         </Button>
                     </div>
-
                     <div>
                         <p>Alternatively you can send an e-mail to <a href="wewolfpack2519@gmail.com">wewolfpack2519@gmail.com</a></p>
                     </div>
