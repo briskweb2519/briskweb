@@ -42,35 +42,22 @@ export default function ComplexGrid() {
 
       <Paper className={classes.paper}>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={6} style={{ width: '100%', height: '400px', border: '1px solid', paddingTop: '8%' }}>
-
+          <Grid item xs={12} md={5} style={{ marginTop:'5%', paddingTop: '15%'}}>
             <div className="trans">
-              <img alt="complex" src={Speedwell3} style={{ width: '50%', height: '250px', border: '1px solid' }} />
+              <img alt="complex" src={Speedwell3} style={{ width: '45%', border: '1px solid' }} />
             </div>
             <div className="avatar">
               <div className="trans">
-                <img alt="complex" src={Speedwell2} style={{ width: '40%', border: '1px solid', position: 'absolute', translate: '140px -180px' }} />
+                <img alt="complex" src={Speedwell2} style={{ width: '40%', border: '1px solid', translate: '130% -150%' }} />
               </div>
             </div>
             <div className="avatar">
               <div className="trans">
-                <img alt="complex" src={Speedwell1} style={{ width: '40%', border: '1px solid', position: 'absolute', translate: '-100px -140px' }} />
+                <img alt="complex" src={Speedwell1} style={{ width: '40%', border: '1px solid', position: 'absolute', translate: '-10% -160%',marginLeft : '2%'}} />
               </div>
             </div>
-
-            {/* <div className="trans" style={{position:'absolute',width:'30%'}}>
-              {/* <div className="avatar" style={{height:'40%'}}> */}
-            {/* <img alt="complex" src={Speedwell1} style={{height:'200px', width:'200px'}}/> */}
-            {/* </div> */}
-            {/* </div>
-            <div className="trans" style={{ width:'30%',position : 'absolute'}}> */}
-            {/* <div className="avatar" style={{height:'40'}}> */}
-            {/* <img alt="complex" src={Speedwell2} style={{height:'200px', width:'200px'}}/> */}
-            {/* </div> */}
-            {/* </div> */}
-
           </Grid>
-          <Grid item xs={12} md={6} style={{ textAlign: 'center', width: '100%', border: '1px solid' }}>
+          <Grid item xs={12} md={5} style={{ marginTop:'5%', paddingTop: '10%'}}>
             <h1>SPEEDWELL</h1>
           </Grid>
         </Grid>
