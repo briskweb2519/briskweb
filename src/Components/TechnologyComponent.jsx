@@ -8,17 +8,15 @@ export default class TechnologyComponent extends Component {
     render() {
         return (
             <div>
-                <div style={{ textAlign: 'left', marginLeft: '12%' }}>
-                    <h1>Technologies</h1>
+                <div className="maincontainer">
+                <p style={{ fontSize: '40px', textAlign: 'left' }}><strong>Technologies</strong></p>
                 </div>
-
                 <div style={{ textAlign: 'left', marginLeft: '12%' }}>
-                    <img src={react} alt=""  height="110"/>
-                    <img src={node} alt="" height="112" style={{margin : '0 2%'}} />
-                    <img src={angular} alt="" height="100" style={{margin : '0 2%'}} />
-                    <img src={dj} alt="" height="90" style={{margin : '0 2%'}}/>
+                    <img src={react} alt="" style={{ width:'15%',margin : '2%' }}/>
+                    <img src={node} alt="" style={{ width:'15%',margin : '2%' }}/>
+                    <img src={angular} alt="" style={{ width:'15%',margin : '2%' }}/>
+                    <img src={dj} alt="" style={{ width:'5%',margin : '2%' }}/>
                 </div>
-                
             </div >
         )
     }

@@ -21,8 +21,8 @@ export default function ComplexGrid() {
 
   return (
     <div className={classes.root}>
-      <div style={{ textAlign: 'left', marginLeft: '12%' }}>
-        <h1>Portfolio</h1>
+      <div className="maincontainer">
+      <p style={{ fontSize: '40px', textAlign: 'left' }}><strong>Portfolio</strong></p>
       </div>
 
       <Paper className={classes.paper}>

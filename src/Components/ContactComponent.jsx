@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { TextField, Radio, Button,RadioGroup, FormControlLabel, FormControl, FormLabel, TextareaAutosize } from '@material-ui/core'
+import { TextField, Radio, Button, RadioGroup, FormControlLabel, FormControl, FormLabel, TextareaAutosize } from '@material-ui/core'
 
 function FormControlLabelPlacement() {
     return (
@@ -17,11 +17,11 @@ function FormControlLabelPlacement() {
 export default class ContactComponent extends Component {
     render() {
         return (
-            <div>
-                <div style={{ textAlign: 'left', marginLeft: '12%' }}>
-                    <h1>Contact</h1>
+            <div style={{ textAlign: 'left' }} className="maincontainer">
+                <div >
+                    <p style={{ fontSize: '40px', textAlign: 'left' }}><strong>Contact</strong></p>
                 </div>
-                <div style={{ textAlign: 'left', marginLeft: '12%' }}>
+                <div>
                     <form>
                         <TextField style={{ width: '35%', marginRight: '10%' }} id="standard-basic" label="Name" />
                         <TextField style={{ width: '35%' }} id="standard-basic" label="E-Mail" />
@@ -36,8 +36,8 @@ export default class ContactComponent extends Component {
                             rows={10}
                             cols={116}
                             defaultValue=""
-                        /><br/>
-                        <Button style={{marginTop : '2%'}} variant="contained" color="primary">
+                        /><br />
+                        <Button style={{ marginTop: '2%' }} variant="contained" color="primary">
                             Send
                         </Button>
                     </div>
