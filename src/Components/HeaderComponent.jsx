@@ -116,7 +116,7 @@ const CreateDrawer = (props) => {
                 className = {classes.sideBarIcon}
                 onClick={()=>{props.updateState(true)}}
                 style={{color:props.status === 'top' ? "white" : "black"}} />
-                {/* <Typography variant="h6" className={classes.title}>WOLFPACK</Typography> */}
+                <Typography variant="h6" className={classes.title}>WOLFPACK</Typography>
                 
             </Grid>
           </Toolbar>
