@@ -1,12 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import HomeComponent from './Components/HomeComponent';
-
+import { BrowserRouter as Router} from 'react-router-dom';
+import HeaderComponent from './Components/HeaderComponent';
+import Services from './Components/ServicesComponent'
+import AboutComponent from './Components/AboutComponent';
 function App() {
   return (
-    <div className="App">
-      <HomeComponent/>
+    <div className="App" style={{overflowX:'hidden'}}>
+      <Router>
+        <HeaderComponent />
+        <HomeComponent />
+        <Services/>
+        <AboutComponent/>
+      </Router>
     </div>
   );
 }

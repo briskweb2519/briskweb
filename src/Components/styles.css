@@ -12,6 +12,23 @@
 		transform: translatey(0px);
 	}
 }
+.container{
+	text-align: center;
+	min-height: 100vh;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	
+}
+
+.gridContent{
+	text-align: center;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .avatar {
 	width: 150px;
@@ -26,4 +43,4 @@
 
 }
 
-/* img { width: 100%; height: auto; } */
+img { width: 100%; height: auto; }
