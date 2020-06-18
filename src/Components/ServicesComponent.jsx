@@ -34,7 +34,7 @@ function Services(props){
         <div style={{minHeight:'100px'}}>
                     <Grid container>
                     <Grid item xs={12} md={3} className="gridContent" style={{padding:'5%'}}>
-                        <img src={props.data.img} alt = {props.data.name} style={{height:'70px', width:'50%'}}/>
+                        <img src={props.data.img} alt = {props.data.name} style={{width:'40%'}}/>
                     </Grid>
                     <Grid item xs={12} md={9} className="gridContent">
                     <div style={{textAlign:'justify'}}>
