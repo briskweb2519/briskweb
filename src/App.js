@@ -11,7 +11,7 @@ import ContactComponent from './Components/ContactComponent';
 
 function App() {
   return (
-    <div className="App" style={{ overflowX: 'hidden' }}>
+    <div className="App" style={{ overflowX: 'hidden', width:'100vw' }}>
       <Router>
         <HeaderComponent />
         <HomeComponent />
