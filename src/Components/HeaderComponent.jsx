@@ -97,9 +97,8 @@ class HeaderComponent extends Component {
   updateDrawer = (text) => { this.setState({ drawer: text }) }
   render() {
     return (
-      <div>
+      <div >
         {this.state.drawerActivate ? <CreateDrawer updateState={this.updateDrawer} drawerState={this.state.drawer} status={this.state.status} /> : <DestroyDrawer status={this.state.status} />}
-
       </div>
     )
   }
@@ -109,7 +108,7 @@ const CreateDrawer = (props) => {
   const classes = styleSheet()
   return (
     <div className={classes.root}>
-      <AppBar position='fixed' style={{ backgroundColor: props.status === 'top' ? "black" : "white", boxShadow: 'none', color: props.status === 'top' ? "white" : "black" }}>
+      <AppBar position='fixed' style={{ paddingLeft : '6%',paddingRight : '6%',backgroundColor: props.status === 'top' ? "black" : "white", boxShadow: 'none', color: props.status === 'top' ? "white" : "black" }}>
         <Toolbar className={classes.toolbar}>
           <Grid container direction="row" justify="space-between" alignItems="center">
             <MenuIcon
@@ -117,7 +116,7 @@ const CreateDrawer = (props) => {
               onClick={() => { props.updateState(true) }}
               style={{ color: props.status === 'top' ? "white" : "black" }} />
             <Typography variant="h6" className={classes.title}>            
-            <Link to="#home" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>WOLFPACK</Link>
+            <Link to="/home/#home" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>WOLFPACK</Link>
             </Typography>
           </Grid>
         </Toolbar>
@@ -134,12 +133,12 @@ const CreateDrawer = (props) => {
           onClick={() => { props.updateState(false) }}
           onKeyDown={() => { props.updateState(false) }}>
           <List className={classes.list}>
-            <ListItem key={1} button divider><Link to="/#projects" color="inherit" style={{ textDecoration: 'none' }}>Projects </Link> </ListItem>
-            <ListItem key={2} button divider><Link to="/#services" color="inherit" style={{ textDecoration: 'none' }}>Services </Link> </ListItem>
-            <ListItem key={2} button divider><Link to="/#details" color="inherit" style={{ textDecoration: 'none' }}>Details </Link> </ListItem>
-            <ListItem key={3} button divider><Link to="/#technology" color="inherit" style={{ textDecoration: 'none' }}>Technology </Link> </ListItem>
-            <ListItem key={4} button divider><Link to="/#about" color="inherit" style={{ textDecoration: 'none' }}>About Us </Link> </ListItem>
-            <ListItem key={5} button divider><Link to="/#contact" color="inherit" style={{ textDecoration: 'none' }}>Contact </Link> </ListItem>
+            <ListItem key={1} button divider><Link to="/home/#projects" color="inherit" style={{ textDecoration: 'none' }}>Projects </Link> </ListItem>
+            <ListItem key={2} button divider><Link to="/home/#services" color="inherit" style={{ textDecoration: 'none' }}>Services </Link> </ListItem>
+            <ListItem key={2} button divider><Link to="/home/#details" color="inherit" style={{ textDecoration: 'none' }}>Details </Link> </ListItem>
+            <ListItem key={3} button divider><Link to="/home/#technology" color="inherit" style={{ textDecoration: 'none' }}>Technology </Link> </ListItem>
+            <ListItem key={4} button divider><Link to="/home/#about" color="inherit" style={{ textDecoration: 'none' }}>About Us </Link> </ListItem>
+            <ListItem key={5} button divider><Link to="/home/#contact" color="inherit" style={{ textDecoration: 'none' }}>Contact </Link> </ListItem>
           </List>
 
         </div>
@@ -154,18 +153,18 @@ const DestroyDrawer = (props) => {
   const classes = styleSheet();
   return (
     <div className={classes.root}>
-      <AppBar position='fixed' style={{ backgroundColor: props.status === 'top' ? "transparent" : "white", boxShadow: 'none', color: props.status === 'top' ? "white" : "black" }}>
+      <AppBar position='fixed' style={{ paddingLeft : '6%',paddingRight : '6%',backgroundColor: props.status === 'top' ? "transparent" : "white", boxShadow: 'none', color: props.status === 'top' ? "white" : "black" }}>
         <Toolbar className={classes.toolBar}>
           {/* <img src={logo} alt="logo" width='3%'/> */}
           <Typography variant="h6" className={classes.title}>
-            <Link to="#home" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>WOLFPACK</Link>
+            <Link to="/home/#home" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>WOLFPACK</Link>
           </Typography>
-          <Button color="inherit"><Link to="/#projects" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Projects </Link></Button>
-          <Button color="inherit"><Link to="/#services" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Services </Link></Button>
-          <Button color="inherit"><Link to="/#details" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Details </Link></Button>
-          <Button color="inherit"><Link to="/#technology" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Technologies </Link></Button>
-          <Button color="inherit"><Link to="/#about" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>About Us </Link></Button>
-          <Button color="inherit"><Link to="/#contact" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Contact </Link></Button>
+          <Button color="inherit"><Link to="/home/#projects" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Projects </Link></Button>
+          <Button color="inherit"><Link to="/home/#services" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Services </Link></Button>
+          <Button color="inherit"><Link to="/home/#details" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Details </Link></Button>
+          <Button color="inherit"><Link to="/home/#technology" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Technologies </Link></Button>
+          <Button color="inherit"><Link to="/home/#about" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>About Us </Link></Button>
+          <Button color="inherit"><Link to="/home/#contact" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Contact </Link></Button>
         </Toolbar>
       </AppBar>
     </div>

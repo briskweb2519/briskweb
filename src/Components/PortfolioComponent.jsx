@@ -23,7 +23,7 @@ export default class PortfolioComponent extends Component {
     super(props)
     this.state = {
       data: [
-        { id: 1, img1: Speedwell1, img2: Speedwell2, img3: Speedwell3, name: "Speedwell", description: "Cycle Industries", place: "Ahmedabad" },
+        { id: 1, img1: Speedwell1, img2: Speedwell2, img3: Speedwell3, name: "Speedwell", description: "Cycle Industries", place: "Ahmedabad", path: "/speedwell" },
         { id: 2, img1: Speedwell1, img2: Speedwell2, img3: Speedwell3, name: "Nutan Vastra Bhandar", description: "Online Shopping", place: "Ahmedabad" },
       ]
     }
@@ -48,28 +48,32 @@ function ComplexGrid(props) {
       </div>
       {
         props.data.map(data =>
-          <Paper className={classes.paper}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={5} style={{ marginTop: '5%', paddingTop: '10%' }}>
-                <h1>{data.name}</h1>
-              </Grid>
-              <Grid item xs={12} md={5} style={{ marginTop: '5%', paddingTop: '15%' }}>
-                <div className="trans">
-                  <img alt="complex" src={data.img3} style={{ width: '45%', border: '1px solid' }} />
-                </div>
-                <div className="avatar">
+          <Link style={{ textDecoration: 'none' }} to={data.path}>
+            <Paper className={classes.paper}>
+              <Grid container spacing={2}>
+                <Grid item xs={12} md={5} style={{ padding: '10%' ,textAlign : 'left'}}>
+                  <h1>{data.name}</h1>
+                  <h3>{data.description}</h3>
+                  <h3>{data.place}</h3>
+                </Grid>
+                <Grid item xs={12} md={5} style={{ paddingTop: '5%' }}>
                   <div className="trans">
-                    <img alt="complex" className="trans1" src={data.img2} style={{ width: '40%', border: '1px solid' }} />
+                    <img alt="complex" src={data.img3} style={{ width: '45%', border: '1px solid' }} />
                   </div>
-                </div>
-                <div className="avatar">
-                  <div className="trans">
-                    <img alt="complex" className="trans2" src={data.img1} style={{ width: '40%', border: '1px solid', position: 'absolute' }} />
+                  <div className="avatar">
+                    <div className="trans">
+                      <img alt="complex" className="trans1" src={data.img2} style={{ width: '40%', border: '1px solid' }} />
+                    </div>
                   </div>
-                </div>
+                  <div className="avatar">
+                    <div className="trans">
+                      <img alt="complex" className="trans2" src={data.img1} style={{ width: '40%', border: '1px solid', position: 'absolute' }} />
+                    </div>
+                  </div>
+                </Grid>
               </Grid>
-            </Grid>
-          </Paper>
+            </Paper>
+          </Link>
         )
       }
     </div >

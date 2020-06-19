@@ -67,7 +67,7 @@ export default class ContactComponent extends Component {
 
                 </div>
                 <div style={{textAlign:'center'}}>
-                <Link to="#home"><ExpandLessIcon fontSize="large" style={{color:'black'}}/></Link>
+                <Link to="/home/#home"><ExpandLessIcon fontSize="large" style={{color:'black'}}/></Link>
                 </div>
             </div>
         )
