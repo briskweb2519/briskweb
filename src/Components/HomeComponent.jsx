@@ -4,7 +4,7 @@ import './styles.css'
 class HomeComponent extends Component {
     render() {
         return (
-            <div className="container" style={{backgroundColor:'black', color:'white'}}>
+            <div className="container" style={{backgroundColor:'black', color:'white'}} id="#home">
                 <div className="avatar">
                     <img src={Logo} alt="Logo" />
                 </div>

@@ -8,15 +8,18 @@ import AboutComponent from './Components/AboutComponent';
 import PortfolioComponent from './Components/PortfolioComponent';
 import TechnologyComponent from './Components/TechnologyComponent';
 import ContactComponent from './Components/ContactComponent';
+import ScrollHandlerComponent from './Components/ScrollHandlerComponent';
+
 
 function App() {
   return (
     <div className="App" style={{ overflowX: 'hidden', width:'100vw' }}>
       <Router>
+        <ScrollHandlerComponent/>
         <HeaderComponent />
         <HomeComponent />
-        <Services />
         <PortfolioComponent />
+        <Services />
         <TechnologyComponent />
         <AboutComponent />
         <ContactComponent />

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { TextField, Radio, Button, Grid, RadioGroup, FormControlLabel, FormControl, FormLabel, TextareaAutosize } from '@material-ui/core'
-
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import {Link} from 'react-router-dom'
 function FormControlLabelPlacement() {
     return (
         <FormControl component="fieldset" style={{ width: '100%' }}>
@@ -28,7 +29,7 @@ function FormControlLabelPlacement() {
 export default class ContactComponent extends Component {
     render() {
         return (
-            <div style={{ textAlign: 'left'}} className="maincontainer">
+            <div style={{ textAlign: 'left'}} className="maincontainer" id="#contact">
                 <div >
                     <p style={{ fontSize: '40px', textAlign: 'left' }}><strong>Contact</strong></p>
                 </div>
@@ -63,6 +64,10 @@ export default class ContactComponent extends Component {
                     <div>
                         <p>Alternatively you can send an e-mail to <a href="wewolfpack2519@gmail.com">wewolfpack2519@gmail.com</a></p>
                     </div>
+
+                </div>
+                <div style={{textAlign:'center'}}>
+                <Link to="#home"><ExpandLessIcon fontSize="large" style={{color:'black'}}/></Link>
                 </div>
             </div>
         )
