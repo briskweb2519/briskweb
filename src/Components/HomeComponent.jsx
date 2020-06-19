@@ -9,6 +9,7 @@ class HomeComponent extends Component {
                     <img src={Logo} alt="Logo" />
                 </div>
                 <h1>WOLFPACK</h1>
+                <h2>We will take your business online</h2>
             </div>
         )
     }

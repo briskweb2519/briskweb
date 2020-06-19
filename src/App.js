@@ -14,6 +14,7 @@ function App() {
       <ScrollHandlerComponent />
         <HeaderComponent/>
         <Switch>
+        <Route path='/' component={RouterComponent} />
           <Route path='/home' component={RouterComponent} />
           <Route path="/speedwell" component={SpeedwellComponent} />
           <Route path="/nutan" component={NutanComponent} />
