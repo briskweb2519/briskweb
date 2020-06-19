@@ -47,32 +47,32 @@ function ComplexGrid(props) {
   const classes = useStyles();
 
   return (
-    <div id="#projects">
+    <div id="#projects" className="maincontainer" >
       {/* eslint-disable-next-line */}
-      <div className={classes.root} className="maincontainer">
+      <div className={classes.root}>
         <p style={{ fontSize: '40px', textAlign: 'left' }}><strong>Portfolio</strong></p>
       </div>
       {/* {
         props.data.map(data => */}
           <Link style={{ textDecoration: 'none' }} to={props.data[0].path}>
             <Paper className={classes.paper}>
-              <Grid container spacing={2}>
-                <Grid item xs={12} md={6} style={{ textAlign: 'left' }}>
+              <Grid container >
+                <Grid item xs={12} md={6} style={{ textAlign: 'left',paddingBottom: '10%'}}>
                   <h1>{props.data[0].name}</h1>
                   <h3>{props.data[0].description} | {props.data[0].place}</h3>
                 </Grid>
-                <Grid item xs={12} md={6} style={{ paddingTop: '5%' }}>
+                <Grid item xs={12} md={6}>
                   <div className="trans">
                     <img alt="complex" src={props.data[0].img3} style={{ width: '45%', border: '1px solid' }} />
                   </div>
                   <div className="avatar">
                     <div className="trans">
-                      <img alt="complex" className="trans1" src={props.data[0].img1} style={{ width: '40%', border: '1px solid' }} />
+                      <img alt="complex" className="trans1" src={props.data[0].img1} style={{ width: '35%', border: '1px solid' }} />
                     </div>
                   </div>
                   <div className="avatar">
                     <div className="trans">
-                      <img alt="complex" className="trans2" src={props.data[0].img2} style={{ width: '40%', border: '1px solid', position: 'absolute' }} />
+                      <img alt="complex" className="trans2" src={props.data[0].img2} style={{ width: '35%', border: '1px solid', position: 'absolute' }} />
                     </div>
                   </div>
                 </Grid>
@@ -81,23 +81,23 @@ function ComplexGrid(props) {
           </Link>
           <Link style={{ textDecoration: 'none' }} to={props.data[1].path}>
             <Paper className={classes.paper}>
-              <Grid container spacing={2}>
-                <Grid item xs={12} md={6} style={{ textAlign: 'left' }}>
+              <Grid container>
+                <Grid item xs={12} md={6} style={{ textAlign: 'left',paddingBottom: '10%'}}>
                   <h1>{props.data[1].name}</h1>
                   <h3>{props.data[1].description} | {props.data[1].place}</h3>
                 </Grid>
-                <Grid item xs={12} md={6} style={{ paddingTop: '5%' }}>
+                <Grid item xs={12} md={6}>
                   <div className="trans">
-                    <img alt="complex" src={props.data[1].img3} style={{ width: '45%', border: '1px solid' }} />
+                    <img alt="complex" src={props.data[1].img3} style={{ width: '50%', border: '1px solid' }} />
                   </div>
                   <div className="avatar">
                     <div className="trans">
-                      <img alt="complex" className="trans1" src={props.data[1].img2} style={{ width: '40%', border: '1px solid' }} />
+                      <img alt="complex" className="trans3" src={props.data[1].img2} style={{ width: '40%', border: '1px solid' }} />
                     </div>
                   </div>
                   <div className="avatar">
                     <div className="trans">
-                      <img alt="complex" className="trans2" src={props.data[1].img1} style={{ width: '40%', border: '1px solid', position: 'absolute' }} />
+                      <img alt="complex" className="trans4" src={props.data[1].img1} style={{ width: '40%', border: '1px solid', position: 'absolute' }} />
                     </div>
                   </div>
                 </Grid>

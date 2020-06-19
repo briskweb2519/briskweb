@@ -39,18 +39,33 @@
 }
 
 .trans1{
-	-webkit-transform: translate(135%,-90%);
-	-ms-transform: translate(135%,-90%);
-	-o-transform: translate(135%,-90%);
-	transform: translate(135%,-90%);
+	-webkit-transform: translate(170%,-120%);
+	-ms-transform: translate(170%,-120%);
+	-o-transform: translate(170%,-120%);
+	transform: translate(170%,-120%);
 	
 }
 
 .trans2{
+	-webkit-transform: translate(30%,-175%);
+	-ms-transform: translate(30%,-175%);
+	-o-transform: translate(30%,-175%);
+	transform: translate(30%,-175%);
+}
+
+.trans3{
+	-webkit-transform: translate(140%,-150%);
+	-ms-transform: translate(140%,-150%);
+	-o-transform: translate(140%,-150%);
+	transform: translate(140%,-150%);
+	
+}
+
+.trans4{
 	-webkit-transform: translate(-2%,-160%);
 	-ms-transform: translate(-2%,-160%);
 	-o-transform: translate(-2%,-160%);
-	transform: translate(2%,-160%);
+	transform: translate(-2%,-160%);
 }
 
 .avatar img { width: 100%; }
