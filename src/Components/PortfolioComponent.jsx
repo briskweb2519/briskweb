@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
@@ -18,60 +18,60 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ComplexGrid() {
+export default class PortfolioComponent extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      data: [
+        { id: 1, img1: Speedwell1, img2: Speedwell2, img3: Speedwell3, name: "Speedwell", description: "Cycle Industries", place: "Ahmedabad" },
+        { id: 2, img1: Speedwell1, img2: Speedwell2, img3: Speedwell3, name: "Nutan Vastra Bhandar", description: "Online Shopping", place: "Ahmedabad" },
+      ]
+    }
+  }
+  render() {
+    return (
+      <div>
+        <ComplexGrid data={this.state.data} />
+      </div>
+    )
+  }
+}
+
+function ComplexGrid(props) {
   const classes = useStyles();
 
   return (
     <div id="#projects">
+      {/* eslint-disable-next-line */}
       <div className={classes.root} className="maincontainer">
         <p style={{ fontSize: '40px', textAlign: 'left' }}><strong>Portfolio</strong></p>
       </div>
-
-      <Paper className={classes.paper}>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={5} style={{ marginTop: '5%', paddingTop: '10%' }}>
-            <h1>SPEEDWELL</h1>
-          </Grid>
-          <Grid item xs={12} md={5} style={{ marginTop: '5%', paddingTop: '15%' }}>
-            <div className="trans">
-              <img alt="complex" src={Speedwell3} style={{ width: '45%', border: '1px solid' }} />
-            </div>
-            <div className="avatar">
-              <div className="trans">
-                <img alt="complex" src={Speedwell2} style={{ width: '40%', border: '1px solid', translate: '135% -150%' }} />
-              </div>
-            </div>
-            <div className="avatar">
-              <div className="trans">
-                <img alt="complex" src={Speedwell1} style={{ width: '40%', border: '1px solid', position: 'absolute', translate: '-2% -160%' }} />
-              </div>
-            </div>
-          </Grid>
-        </Grid>
-      </Paper>
-
-      <Paper className={classes.paper}>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={5} style={{ marginTop: '5%', paddingTop: '15%' }}>
-            <div className="trans">
-              <img alt="complex" src={Speedwell3} style={{ width: '45%', border: '1px solid' }} />
-            </div>
-            <div className="avatar">
-              <div className="trans">
-                <img alt="complex" src={Speedwell2} style={{ width: '40%', border: '1px solid', translate: '135% -150%' }} />
-              </div>
-            </div>
-            <div className="avatar">
-              <div className="trans">
-                <img alt="complex" src={Speedwell1} style={{ width: '40%', border: '1px solid', position: 'absolute', translate: '-2% -160%' }} />
-              </div>
-            </div>
-          </Grid>
-          <Grid item xs={12} md={5} style={{ marginTop: '5%', paddingTop: '10%' }}>
-            <h1>SPEEDWELL</h1>
-          </Grid>
-        </Grid>
-      </Paper>
+      {
+        props.data.map(data =>
+          <Paper className={classes.paper}>
+            <Grid container spacing={2}>
+              <Grid item xs={12} md={5} style={{ marginTop: '5%', paddingTop: '10%' }}>
+                <h1>{data.name}</h1>
+              </Grid>
+              <Grid item xs={12} md={5} style={{ marginTop: '5%', paddingTop: '15%' }}>
+                <div className="trans">
+                  <img alt="complex" src={data.img3} style={{ width: '45%', border: '1px solid' }} />
+                </div>
+                <div className="avatar">
+                  <div className="trans">
+                    <img alt="complex" className="trans1" src={data.img2} style={{ width: '40%', border: '1px solid' }} />
+                  </div>
+                </div>
+                <div className="avatar">
+                  <div className="trans">
+                    <img alt="complex" className="trans2" src={data.img1} style={{ width: '40%', border: '1px solid', position: 'absolute' }} />
+                  </div>
+                </div>
+              </Grid>
+            </Grid>
+          </Paper>
+        )
+      }
     </div >
   );
 }
