@@ -30,13 +30,7 @@ export default class NutanComponent extends Component {
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    margin: 'auto',
-    maxWidth: 1000,
-    // width : '100%'
-  },
+  }
 }));
 
 function ComplexGrid(props) {
@@ -46,33 +40,31 @@ function ComplexGrid(props) {
     < div className={classes.root} className="maincontainer" >
       {
         props.data.map(data =>
-          <Paper className={classes.paper}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} style={{ textAlign: 'left', paddingBottom: '15%' }}>
-                <h1>{data.name}</h1>
-                <h3>{data.description} | {data.place}</h3>
-                <h3>Implementation</h3>
-                <Button href="https://nutan.herokuapp.com/Nutan" style={{ marginTop: '2%' }} variant="contained" color="primary">
-                  Visit Website &nbsp; <ArrowRightAltOutlinedIcon />
-                </Button>
-              </Grid>
-              <Grid item xs={12} md={6} style={{ paddingTop: '10%' }}>
-                <div className="trans">
-                  <img alt="complex" src={data.img3} style={{ width: '50%', border: '1px solid' }} />
-                </div>
-                <div className="avatar">
-                  <div className="trans">
-                    <img alt="complex" className="trans1" src={data.img2} style={{ width: '45%', border: '1px solid' }} />
-                  </div>
-                </div>
-                <div className="avatar">
-                  <div className="trans">
-                    <img alt="complex" className="trans2" src={data.img1} style={{ width: '45%', border: '1px solid', position: 'absolute' }} />
-                  </div>
-                </div>
-              </Grid>
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={6} style={{ textAlign: 'left', paddingBottom: '15%',marginTop : '5%'}}>
+              <h1>{data.name}</h1>
+              <h3>{data.description} | {data.place}</h3>
+              <h3>Implementation</h3>
+              <Button href="https://nutan.herokuapp.com/Nutan" style={{ marginTop: '2%' }} variant="contained" color="primary">
+                Visit Website &nbsp; <ArrowRightAltOutlinedIcon />
+              </Button>
             </Grid>
-          </Paper>
+            <Grid item xs={12} md={6} style={{ paddingTop: '10%' }}>
+              <div className="trans">
+                <img alt="complex" src={data.img3} style={{ width: '45%', border: '1px solid' }} />
+              </div>
+              <div className="avatar">
+                <div className="trans">
+                  <img alt="complex" className="trans1" src={data.img2} style={{ width: '40%', border: '1px solid' }} />
+                </div>
+              </div>
+              <div className="avatar">
+                <div className="trans">
+                  <img alt="complex" className="trans2" src={data.img1} style={{ width: '40%', border: '1px solid', position: 'absolute' }} />
+                </div>
+              </div>
+            </Grid>
+          </Grid>
         )
       }
 
