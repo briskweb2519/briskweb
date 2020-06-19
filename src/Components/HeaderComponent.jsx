@@ -153,7 +153,7 @@ const DestroyDrawer = (props) => {
   const classes = styleSheet();
   return (
     <div className={classes.root}>
-      <AppBar position='fixed' style={{ paddingLeft : '6%',paddingRight : '6%',backgroundColor: props.status === 'top' ? "transparent" : "white", boxShadow: 'none', color: props.status === 'top' ? "white" : "black" }}>
+      <AppBar position='fixed' style={{ paddingLeft : '6%',paddingRight : '6%',backgroundColor: props.status === 'top' ? "black" : "white", boxShadow: 'none', color: props.status === 'top' ? "white" : "black" }}>
         <Toolbar className={classes.toolBar}>
           {/* <img src={logo} alt="logo" width='3%'/> */}
           <Typography variant="h6" className={classes.title}>
