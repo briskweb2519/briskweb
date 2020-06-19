@@ -51,12 +51,11 @@ function ComplexGrid(props) {
           <Link style={{ textDecoration: 'none' }} to={data.path}>
             <Paper className={classes.paper}>
               <Grid container spacing={2}>
-                <Grid item xs={12} md={5} style={{ padding: '10%' ,textAlign : 'left'}}>
+                <Grid item xs={12} md={6} style={{ textAlign: 'left' }}>
                   <h1>{data.name}</h1>
-                  <h3>{data.description}</h3>
-                  <h3>{data.place}</h3>
+                  <h3>{data.description} | {data.place}</h3>
                 </Grid>
-                <Grid item xs={12} md={5} style={{ paddingTop: '5%' }}>
+                <Grid item xs={12} md={6} style={{ paddingTop: '5%' }}>
                   <div className="trans">
                     <img alt="complex" src={data.img3} style={{ width: '45%', border: '1px solid' }} />
                   </div>

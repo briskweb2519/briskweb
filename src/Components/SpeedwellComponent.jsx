@@ -42,7 +42,7 @@ function ComplexGrid(props) {
         props.data.map(data =>
           <Paper className={classes.paper}>
             <Grid container spacing={2}>
-              <Grid item xs={12} md={5} style={{ textAlign: 'left' }}>
+              <Grid item xs={12} md={6} style={{ textAlign: 'left' }}>
                 <h1>{data.name}</h1>
                 <h3>{data.description} | {data.place}</h3>
                 <h3>Implementation</h3>
@@ -50,7 +50,7 @@ function ComplexGrid(props) {
                   Visit Website
                 </Button>
               </Grid>
-              <Grid item xs={12} md={5} style={{ paddingTop: '5%' }}>
+              <Grid item xs={12} md={6} style={{ paddingTop: '5%' }}>
                 <div className="trans">
                   <img alt="complex" src={data.img3} style={{ width: '45%', border: '1px solid' }} />
                 </div>
