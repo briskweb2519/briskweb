@@ -4,6 +4,7 @@ import HomeComponent from './Components/HomeComponent';
 import { BrowserRouter as Router ,Route} from 'react-router-dom';
 import HeaderComponent from './Components/HeaderComponent';
 import Services from './Components/ServicesComponent'
+import Details from './Components/DetailsComponent'
 import AboutComponent from './Components/AboutComponent';
 import PortfolioComponent from './Components/PortfolioComponent';
 import TechnologyComponent from './Components/TechnologyComponent';
@@ -19,7 +20,8 @@ function App() {
         <HeaderComponent />
         <HomeComponent />
         <PortfolioComponent />
-        <Services />
+        <Services/>
+        <Details/>
         <TechnologyComponent />
         <AboutComponent />
         <ContactComponent />

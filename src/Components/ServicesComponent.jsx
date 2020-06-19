@@ -1,18 +1,31 @@
 import React, {Component} from 'react'
-import './styles.css'
-import { Grid } from '@material-ui/core'
-import Solution from '../Images/Solution.png'
-import Meeting from '../Images/Meeting.png'
-import Pricing from '../Images/Pricing.png'
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Typography from '@material-ui/core/Typography';
+import { Grid } from '@material-ui/core';
+import Website from '../Images/Web.jpg'
+import App from '../Images/App.jpg'
+import Deploy from '../Images/hosting.png'
+import Maintain from '../Images/maintain.jpeg'
+const useStyles = makeStyles({
+    root: {
+      width: '100%',
+      marginTop : '5%'
+    },
+  });
+
 class ServicesComponent extends Component{
     constructor(props){
         super(props)
         this.state = {
-            data : [
-                {id : 1, img : Solution, name : "State of the Art Solutions", description : "It is 2020 and you should see that in the final product. This means much more than responsiveness and cross-browser-compatibility and involves best practices regarding performance, accessibility, security and usability.This results in appropriate design, secure websites, fast load times and happy customers. Ultimately, this is also the best and most reliable way to achieve Search Engine Optimization (SEO)."},
-                {id : 2, img : Meeting, name : "Non-Binding Introductory Meeting", description : "The first meeting or (video) call is always free and non-binding. It serves the purpose of defining the scope of the project and talking about possible solutions. If the expectations are not met in the end for whatever reason, that's unfortunate, but definitely not a problem."},
-                {id : 3, img : Pricing, name : "Transparent Pricing", description : "The price will be fully transparent at any stage of the project. That means: I will usually not charge on an hourly basis, but rather we will agree on a fixed price. Only if the scope of the project changes will the price be adjusted accordingly with prior agreement. Therefore it is always clear on what the final price will be, and there will be no surprises."},
-                
+            data:[
+                {id:1, name:'Website Development', img: Website},
+                {id:2, name:'Application Development', img: App},
+                {id:1, name:'Deployment', img: Deploy},
+                {id:2, name:'Maintenance', img: Maintain}
             ]
         }
     }
@@ -20,30 +33,52 @@ class ServicesComponent extends Component{
         return(
             <div className="maincontainer" id="#services">
                 <p style={{fontSize:'40px', textAlign:'left'}}><strong>Services</strong></p>
-                <p style={{fontSize:'20px', textAlign:'left'}}>Creating a relationship of trust and a pleasant atmosphere is essential for every successful partnership. Therefore, following aspects are part of all of our projects:</p>
-                {this.state.data.map(d => 
-                    <Services data = {d}/>
-                )}
+                <p style={{fontSize:'20px' , textAlign:'justify'}}> We accept the responsibilities for developing website and applications. We are here to design, develop, deploy, and maintain the project for your better reach. </p><br/>
+                <Grid container >
+                    <Grid item xs={12} md={6} className="gridContent" style={{padding:'3%'}}>
+                    <ImgMediaCard data={this.state.data[0]}/>
+                    </Grid>
+                    <Grid item xs={12} md={6} className="gridContent" style={{padding:'3%'}}>
+                    <ImgMediaCard data={this.state.data[1]}/>
+                    </Grid>
+                    </Grid>
+                <Grid container direction="row" alignItems='stretch' >
+                    <Grid item xs={12} md={6} className="gridContent" style={{padding:'3%'}}>
+                    <ImgMediaCard data={this.state.data[2]}/>
+                    </Grid>
+                    <Grid item xs={12} md={6} className="gridContent" style={{padding:'3%'}}>
+                    <ImgMediaCard data={this.state.data[3]}/>
+                    </Grid>
+                </Grid>
+                
             </div>
         )
     }
 }
 
-function Services(props){
-    return(
-        <div style={{minHeight:'100px'}}>
-                    <Grid container>
-                    <Grid item xs={12} md={3} className="gridContent" style={{padding:'5%'}}>
-                        <img src={props.data.img} alt = {props.data.name} style={{width:'40%'}}/>
-                    </Grid>
-                    <Grid item xs={12} md={9} className="gridContent">
-                    <div style={{textAlign:'justify'}}>
-                        <strong>{props.data.name}</strong><br/><br/>
-                        {props.data.description}
-                    </div>
-                    </Grid>
-                    </Grid>
-                </div>
-    )
-}
+function ImgMediaCard(props) {
+    const classes = useStyles();
+  
+    return (
+      <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            component="img"
+            alt={props.data.name}
+            style={{width : '100%'}}
+            image={props.data.img}
+            title={props.data.name}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              {props.data.name}
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+    );
+  }
 export default ServicesComponent

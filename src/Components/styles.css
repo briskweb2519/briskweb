@@ -38,7 +38,21 @@
 	animation: float 6s ease-in-out infinite;
 }
 
+.trans1{
+	-webkit-transform: translate(135%,-150%);
+	-ms-transform: translate(135%,-150%);
+	-o-transform: translate(135%,-150%);
+	transform: translate(135%,-150%);
+	
+}
 
+.trans2{
+	-webkit-transform: translate(-2%,-160%);
+	-ms-transform: translate(-2%,-160%);
+	-o-transform: translate(-2%,-160%);
+	transform: translate(-2%,-160%);
+	
+}
 
 .avatar img { width: 100%; height: auto}
 

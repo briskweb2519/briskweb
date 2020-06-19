@@ -136,6 +136,7 @@ const CreateDrawer = (props) => {
           <List className={classes.list}>
             <ListItem key={1} button divider><Link to="/#projects" color="inherit" style={{ textDecoration: 'none' }}>Projects </Link> </ListItem>
             <ListItem key={2} button divider><Link to="/#services" color="inherit" style={{ textDecoration: 'none' }}>Services </Link> </ListItem>
+            <ListItem key={2} button divider><Link to="/#details" color="inherit" style={{ textDecoration: 'none' }}>Details </Link> </ListItem>
             <ListItem key={3} button divider><Link to="/#technology" color="inherit" style={{ textDecoration: 'none' }}>Technology </Link> </ListItem>
             <ListItem key={4} button divider><Link to="/#about" color="inherit" style={{ textDecoration: 'none' }}>About Us </Link> </ListItem>
             <ListItem key={5} button divider><Link to="/#contact" color="inherit" style={{ textDecoration: 'none' }}>Contact </Link> </ListItem>
@@ -161,6 +162,7 @@ const DestroyDrawer = (props) => {
           </Typography>
           <Button color="inherit"><Link to="/#projects" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Projects </Link></Button>
           <Button color="inherit"><Link to="/#services" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Services </Link></Button>
+          <Button color="inherit"><Link to="/#details" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Details </Link></Button>
           <Button color="inherit"><Link to="/#technology" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Technologies </Link></Button>
           <Button color="inherit"><Link to="/#about" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>About Us </Link></Button>
           <Button color="inherit"><Link to="/#contact" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Contact </Link></Button>
