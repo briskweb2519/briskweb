@@ -96,12 +96,9 @@ export default class ContactComponent extends Component {
                     </div>
                     <div>
                         <p>Alternatively you can send an e-mail to <a href="wewolfpack2519@gmail.com">wewolfpack2519@gmail.com</a></p>
-                    </div>
-                    <div>
                         <p>Shail Raval : +917600991213</p>
                         <p>Meet Patel : +919638409065</p>
                     </div>
-
                 </div>
                 <div style={{ textAlign: 'center' }}>
                     <Link to="/home/#home"><ExpandLessIcon fontSize="large" style={{ color: 'black' }} /></Link>
