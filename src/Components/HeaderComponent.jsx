@@ -137,12 +137,12 @@ const CreateDrawer = (props) => {
             <Button onClick={() => {props.updateState(false)}} style={{fontSize:'18px'}}> X </Button> 
             </div>
           <List className={classes.list}>
-            <ListItem key={1} button divider><Link to="/home/#projects" color="inherit" style={{color : 'black',textDecoration: 'none' }}>Projects </Link> </ListItem>
-            <ListItem key={2} button divider><Link to="/home/#services" color="inherit" style={{ color : 'black',textDecoration: 'none' }}>Services </Link> </ListItem>
-            <ListItem key={2} button divider><Link to="/home/#details" color="inherit" style={{ color : 'black',textDecoration: 'none' }}>Details </Link> </ListItem>
-            <ListItem key={3} button divider><Link to="/home/#technology" color="inherit" style={{ color : 'black',textDecoration: 'none' }}>Technology </Link> </ListItem>
-            <ListItem key={4} button divider><Link to="/home/#about" color="inherit" style={{ color : 'black',textDecoration: 'none' }}>About Us </Link> </ListItem>
-            <ListItem key={5} button divider><Link to="/home/#contact" color="inherit" style={{ color : 'black', textDecoration: 'none' }}>Contact </Link> </ListItem>
+          <Link to="/home/#projects" color="inherit" style={{color : 'black',textDecoration: 'none' }}><ListItem key={1} button divider>Projects </ListItem> </Link> 
+          <Link to="/home/#services" color="inherit" style={{ color : 'black',textDecoration: 'none' }}><ListItem key={2} button divider>Services </ListItem> </Link>
+          <Link to="/home/#details" color="inherit" style={{ color : 'black',textDecoration: 'none' }}><ListItem key={2} button divider>Details  </ListItem> </Link>
+          <Link to="/home/#technology" color="inherit" style={{ color : 'black',textDecoration: 'none' }}><ListItem key={3} button divider>Technology </ListItem> </Link>
+          <Link to="/home/#about" color="inherit" style={{ color : 'black',textDecoration: 'none' }}><ListItem key={4} button divider>About Us </ListItem> </Link>
+          <Link to="/home/#contact" color="inherit" style={{ color : 'black', textDecoration: 'none' }}><ListItem key={5} button divider>Contact  </ListItem> </Link>
           </List>
 
         </div>
