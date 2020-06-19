@@ -26,7 +26,7 @@ class AboutComponent extends Component{
     }
     render(){
         return(
-            <div className="maincontainer">
+            <div className="maincontainer" id="#about">
                 <p style={{fontSize:'40px', textAlign:'left'}}><strong>Team</strong></p>
                 <p style={{fontSize:'20px' , textAlign:'justify'}}> We are a team of full stack developer and digital marketing. We focus on taking the business online and help them grow. We take the full responsibility for the development and hosting of your website or your application. We totally believe in working with modern technologies and trending styles. Let us make the slogan <strong>Vocal For Local</strong> real. </p><br/>
                 <Grid container >

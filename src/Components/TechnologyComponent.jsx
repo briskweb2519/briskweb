@@ -8,7 +8,7 @@ import Grid from '@material-ui/core/Grid'
 export default class TechnologyComponent extends Component {
     render() {
         return (
-            <div>
+            <div id="#technology">
                 <div className="maincontainer">
                     <p style={{ fontSize: '40px', textAlign: 'left' }}><strong>Technologies</strong></p>
                 </div>

@@ -22,8 +22,8 @@ export default function ComplexGrid() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <div className="maincontainer">
+    <div id="#projects">
+      <div className={classes.root} className="maincontainer">
         <p style={{ fontSize: '40px', textAlign: 'left' }}><strong>Portfolio</strong></p>
       </div>
 
