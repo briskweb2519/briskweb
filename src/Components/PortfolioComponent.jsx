@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import Logo from '../Images/logo.png'
 import Speedwell1 from '../Images/speedwell/speedwell1.png'
 import Speedwell2 from '../Images/speedwell/speedwell2.png'
 import Speedwell3 from '../Images/speedwell/speedwell4.png'
