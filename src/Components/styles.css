@@ -39,10 +39,10 @@
 }
 
 .trans1{
-	-webkit-transform: translate(135%,-150%);
-	-ms-transform: translate(135%,-150%);
-	-o-transform: translate(135%,-150%);
-	transform: translate(135%,-150%);
+	-webkit-transform: translate(135%,-90%);
+	-ms-transform: translate(135%,-90%);
+	-o-transform: translate(135%,-90%);
+	transform: translate(135%,-90%);
 	
 }
 
@@ -50,11 +50,10 @@
 	-webkit-transform: translate(-2%,-160%);
 	-ms-transform: translate(-2%,-160%);
 	-o-transform: translate(-2%,-160%);
-	transform: translate(-2%,-160%);
-	
+	transform: translate(2%,-160%);
 }
 
-.avatar img { width: 100%; height: auto}
+.avatar img { width: 100%; }
 
 .trans{
 	transform: skew(50deg, -15deg);

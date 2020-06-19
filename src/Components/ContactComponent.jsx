@@ -15,7 +15,7 @@ function FormControlLabelPlacement(props) {
                         <FormControlLabel name="project" value="web-application" control={<Radio color="primary" />} label="Web Application" onChange={props.onHandleChange}/>
                     </Grid>
                     <Grid item xs={12} md={4}>
-                        <FormControlLabel name="project" value="other" control={<Radio color="primary" />} label="Other" onChange={props.onHandleChange}/>
+                        <FormControlLabel name="project" value="both" control={<Radio color="primary" />} label="Both" onChange={props.onHandleChange}/>
                     </Grid>
                 </Grid>
             </RadioGroup>
@@ -47,7 +47,13 @@ export default class ContactComponent extends Component {
           'wewolfpack', templateId,
           variables
           ).then(res => {
-            console.log('Email successfully sent!')
+            alert("We have recieved your request. We wil get back to you soon.")
+            this.setState({
+                name : "",
+                email:"",
+                project:"",
+                message:""
+            })
           })
           .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
       }
