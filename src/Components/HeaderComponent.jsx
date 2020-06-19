@@ -39,7 +39,7 @@ const styleSheet = makeStyles((theme) => ({
     alignItems: 'flex-end',
   },
   list: {
-    width: 200,
+    width: '100vw',
   },
   padding: {
     paddingRight: 30,
@@ -131,14 +131,18 @@ const CreateDrawer = (props) => {
           tabIndex={0}
           role="button"
           onClick={() => { props.updateState(false) }}
-          onKeyDown={() => { props.updateState(false) }}>
+          onKeyDown={() => { props.updateState(false) }}
+          style={{width:'100vw'}}>
+            <div style={{width:'100%', paddingLeft:'85vw', color:'black'}}>
+            <Button onClick={() => {props.updateState(false)}} style={{fontSize:'18px'}}> X </Button> 
+            </div>
           <List className={classes.list}>
-            <ListItem key={1} button divider><Link to="/home/#projects" color="inherit" style={{ textDecoration: 'none' }}>Projects </Link> </ListItem>
-            <ListItem key={2} button divider><Link to="/home/#services" color="inherit" style={{ textDecoration: 'none' }}>Services </Link> </ListItem>
-            <ListItem key={2} button divider><Link to="/home/#details" color="inherit" style={{ textDecoration: 'none' }}>Details </Link> </ListItem>
-            <ListItem key={3} button divider><Link to="/home/#technology" color="inherit" style={{ textDecoration: 'none' }}>Technology </Link> </ListItem>
-            <ListItem key={4} button divider><Link to="/home/#about" color="inherit" style={{ textDecoration: 'none' }}>About Us </Link> </ListItem>
-            <ListItem key={5} button divider><Link to="/home/#contact" color="inherit" style={{ textDecoration: 'none' }}>Contact </Link> </ListItem>
+            <ListItem key={1} button divider><Link to="/home/#projects" color="inherit" style={{color : 'black',textDecoration: 'none' }}>Projects </Link> </ListItem>
+            <ListItem key={2} button divider><Link to="/home/#services" color="inherit" style={{ color : 'black',textDecoration: 'none' }}>Services </Link> </ListItem>
+            <ListItem key={2} button divider><Link to="/home/#details" color="inherit" style={{ color : 'black',textDecoration: 'none' }}>Details </Link> </ListItem>
+            <ListItem key={3} button divider><Link to="/home/#technology" color="inherit" style={{ color : 'black',textDecoration: 'none' }}>Technology </Link> </ListItem>
+            <ListItem key={4} button divider><Link to="/home/#about" color="inherit" style={{ color : 'black',textDecoration: 'none' }}>About Us </Link> </ListItem>
+            <ListItem key={5} button divider><Link to="/home/#contact" color="inherit" style={{ color : 'black', textDecoration: 'none' }}>Contact </Link> </ListItem>
           </List>
 
         </div>
