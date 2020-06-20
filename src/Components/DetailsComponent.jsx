@@ -19,7 +19,7 @@ class DetailsComponent extends Component{
         return(
             <div className="maincontainer" id="#details">
                 <p style={{fontSize:'40px', textAlign:'left'}}><strong>Details</strong></p>
-                <p style={{fontSize:'25px',textAlign:'left'}}>Creating a relationship of trust and a pleasant atmosphere is essential for every successful partnership. Therefore, following aspects are part of all of our projects:</p>
+                <p style={{fontSize:'20px',textAlign:'left'}}>Creating a relationship of trust and a pleasant atmosphere is essential for every successful partnership. Therefore, following aspects are part of all of our projects:</p>
                 {this.state.data.map(d => 
                     <Services data = {d}/>
                 )}
@@ -36,7 +36,7 @@ function Services(props){
                         <img src={props.data.img} alt = {props.data.name} style={{width:'40%',marginBottom : '5%'}}/>
                     </Grid>
                     <Grid item xs={12} md={9} className="gridContent">
-                    <div style={{fontSize:'25px',textAlign:'justify'}}>
+                    <div style={{fontSize:'20px',textAlign:'justify'}}>
                         <strong>{props.data.name}</strong><br/><br/>
                         {props.data.description}<br/><br/>
                     </div>
