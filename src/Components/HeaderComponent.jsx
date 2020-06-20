@@ -39,7 +39,8 @@ const styleSheet = makeStyles((theme) => ({
     alignItems: 'flex-end',
   },
   list: {
-    width: 200,
+    width: "100vh",
+    textDecoration : 'none',
   },
   padding: {
     paddingRight: 30,
