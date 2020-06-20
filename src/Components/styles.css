@@ -17,10 +17,10 @@
 	text-align: center;
 	min-height: 100vh;
 	display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Cormorant Garamond', serif;
 }
 
 .gridContent{
@@ -79,5 +79,5 @@
 	padding-top: 5%;
 	margin-left: 10%;
 	margin-right: 10%;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Cormorant Garamond', serif;
 }

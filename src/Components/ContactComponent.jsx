@@ -94,7 +94,7 @@ export default class ContactComponent extends Component {
                             Send
                         </Button>
                     </div>
-                    <div>
+                    <div style={{fontSize:'20px'}}>
                         <p>Alternatively you can send an e-mail to <a href="wewolfpack2519@gmail.com">wewolfpack2519@gmail.com</a></p>
                         <p>Shail Raval : +917600991213</p>
                         <p>Meet Patel : +919638409065</p>

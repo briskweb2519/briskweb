@@ -97,7 +97,7 @@ class HeaderComponent extends Component {
   updateDrawer = (text) => { this.setState({ drawer: text }) }
   render() {
     return (
-      <div >
+      <div>
         {this.state.drawerActivate ? <CreateDrawer updateState={this.updateDrawer} drawerState={this.state.drawer} status={this.state.status} /> : <DestroyDrawer status={this.state.status} />}
       </div>
     )
