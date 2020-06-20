@@ -1,6 +1,6 @@
 {
   "name": "wolfpack",
-  "homepage": ".",
+  "homepage": "https://wewolfpack.github.io/wolfpack",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
