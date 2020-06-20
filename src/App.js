@@ -15,7 +15,6 @@ function App() {
         <HeaderComponent/>
         <Switch>
         <Route path='/' exact component={RouterComponent} />
-          <Route path='/home' component={RouterComponent} />
           <Route path="/speedwell" component={SpeedwellComponent} />
           <Route path="/nutan" component={NutanComponent} />
         </Switch>
