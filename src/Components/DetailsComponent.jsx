@@ -38,7 +38,7 @@ function Services(props){
                     <Grid item xs={12} md={9} className="gridContent">
                     <div style={{fontSize:'25px',textAlign:'justify'}}>
                         <strong>{props.data.name}</strong><br/><br/>
-                        {props.data.description}
+                        {props.data.description}<br/><br/>
                     </div>
                     </Grid>
                     </Grid>

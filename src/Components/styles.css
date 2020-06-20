@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @keyframes float {
 	0% {
 		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
@@ -79,5 +78,6 @@
 	padding-top: 5%;
 	margin-left: 10%;
 	margin-right: 10%;
-	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Poiret One', cursive;
+    font-family: 'Raleway', sans-serif;
 }

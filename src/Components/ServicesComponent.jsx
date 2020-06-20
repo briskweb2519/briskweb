@@ -60,7 +60,7 @@ function ImgMediaCard(props) {
     const classes = useStyles();
   
     return (
-      <Card className={classes.root}>
+      <Card className={classes.root}classes="maincontainer">
         <CardActionArea>
           <CardMedia
             component="img"
