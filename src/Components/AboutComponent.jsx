@@ -30,7 +30,7 @@ class AboutComponent extends Component{
         return(
             <div className="maincontainer" id="#about">
                 <p style={{fontSize:'40px', textAlign:'left'}}><strong>Team</strong></p>
-                <p style={{fontSize:'20px' , textAlign:'justify'}}> We are a team of full stack developer and digital marketing. We focus on taking the business online and help them grow. We take the full responsibility for the development and hosting of your website or your application. We totally believe in working with modern technologies and trending styles. Let us make the slogan <strong>Vocal For Local</strong> real. </p><br/>
+                <p style={{fontSize:'20px' , textAlign:'justify'}}> We are full stack developers. We focus on taking your business online and help them grow. We take the full responsibility for the development and hosting of your website or your application. We totally believe in working with modern technologies and trending styles. Let us make the slogan <strong>Vocal For Local</strong> real. </p><br/>
                 <Grid container >
                     <Grid item xs={12} md={6} className="gridContent">
                     <a href="https://www.linkedin.com/in/shail-raval-6a513b139/" style={{textDecoration:'none'}}><ImgMediaCard data={this.state.data[0]}/></a>
