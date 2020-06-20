@@ -62,8 +62,8 @@ function ImgMediaCard(props) {
             <Typography gutterBottom variant="h5" component="h2">
               {props.data.name}
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              
+            <Typography variant="h6" color="textSecondary" component="h3">
+              Software Developer
             </Typography>
           </CardContent>
         </CardActionArea>

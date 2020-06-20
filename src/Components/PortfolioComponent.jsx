@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button';
 import Speedwell1 from '../Images/speedwell/speedwell1.png'
 import Speedwell2 from '../Images/speedwell/speedwell2.png'
 import Speedwell3 from '../Images/speedwell/speedwell4.png'
@@ -11,6 +11,7 @@ import Nutan3 from '../Images/Nutan/Nutan3a.png'
 import Nutan4 from '../Images/Nutan/Nutan4.png'
 import Nutan5 from '../Images/Nutan/Nutan5.png'
 import Nutan6 from '../Images/Nutan/Nutan6.png'
+import ArrowRightAltOutlinedIcon from '@material-ui/icons/ArrowRightAltOutlined';
 import { Link } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -51,6 +52,9 @@ function ComplexGrid(props) {
           <Grid item xs={12} md={6} style={{ textAlign: 'left', paddingBottom: '10%' }}>
             <h1>{props.data[0].name}</h1>
             <h3>{props.data[0].description} | {props.data[0].place}</h3>
+            <Link to="/nutan" style={{textDecoration:'none'}}><Button style={{ marginTop: '2%' }} variant="contained" color="primary">
+                View Project &nbsp; <ArrowRightAltOutlinedIcon />
+              </Button></Link>
           </Grid>
           <Grid item xs={12} md={6}>
             <div className="trans">
@@ -74,6 +78,9 @@ function ComplexGrid(props) {
           <Grid item xs={12} md={6} style={{ textAlign: 'left', paddingBottom: '10%' }}>
             <h1>{props.data[1].name}</h1>
             <h3>{props.data[1].description} | {props.data[1].place}</h3>
+            <Link to="/speedwell" style={{textDecoration:'none'}}><Button style={{ marginTop: '2%' }} variant="contained" color="primary">
+                View Project &nbsp; <ArrowRightAltOutlinedIcon />
+              </Button></Link>
           </Grid>
           <Grid item xs={12} md={6}>
             <div className="trans">
