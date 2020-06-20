@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import react from '../Images/react.png'
-import node from '../Images/node.webp'
+import node from '../Images/node.png'
 import dj from '../Images/dj.png'
 import angular from '../Images/angular.jfif'
 import Grid from '@material-ui/core/Grid'

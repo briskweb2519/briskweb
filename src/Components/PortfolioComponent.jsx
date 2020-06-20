@@ -44,7 +44,7 @@ function ComplexGrid(props) {
     <div id="#projects" className="maincontainer" >
       {/* eslint-disable-next-line */}
       <div className={classes.root}>
-        <p style={{ fontSize: '40px', textAlign: 'left' }}><strong>Portfolio</strong></p>
+        <p style={{ fontSize: '40px', textAlign: 'left' }}><strong>Projects</strong></p>
       </div>
       <Link style={{ textDecoration: 'none', color: 'black' }} to={props.data[0].path}>
         <Grid container >
