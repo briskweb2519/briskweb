@@ -14,7 +14,7 @@ function App() {
       <ScrollHandlerComponent />
         <HeaderComponent/>
         <Switch>
-        <Route path='/wolfpack' exact component={RouterComponent} />
+        <Route path='/' exact component={RouterComponent} />
           <Route path="/speedwell" component={SpeedwellComponent} />
           <Route path="/nutan" component={NutanComponent} />
         </Switch>
