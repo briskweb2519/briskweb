@@ -116,7 +116,7 @@ const CreateDrawer = (props) => {
               onClick={() => { props.updateState(true) }}
               style={{ color: props.status === 'top' ? "white" : "black" }} />
             <Typography variant="h6" className={classes.title}>            
-            <Link to="/home/#home" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>WOLFPACK</Link>
+            <Link to="/home/#home" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>&lt;&nbsp;WOLFPACK&nbsp;/&gt;</Link>
             </Typography>
           </Grid>
         </Toolbar>
