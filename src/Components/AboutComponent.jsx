@@ -8,9 +8,11 @@ import Typography from '@material-ui/core/Typography';
 import { Grid } from '@material-ui/core';
 import Shail from '../Images/Shail.jpeg'
 import Meet from '../Images/Meet.jpeg'
+import { Link } from 'react-router-dom';
 const useStyles = makeStyles({
     root: {
       width: 345,
+      marginTop:'4%',
     },
   });
 
@@ -28,13 +30,13 @@ class AboutComponent extends Component{
         return(
             <div className="maincontainer" id="#about">
                 <p style={{fontSize:'40px', textAlign:'left'}}><strong>Team</strong></p>
-                <p style={{fontSize:'20px' , textAlign:'justify'}}> We are a team of full stack developer and digital marketing. We focus on taking the business online and help them grow. We take the full responsibility for the development and hosting of your website or your application. We totally believe in working with modern technologies and trending styles. Let us make the slogan <strong>Vocal For Local</strong> real. </p><br/>
+                <p style={{fontSize:'20px' , textAlign:'justify'}}> We are full stack developers. We focus on taking your business online and help them grow. We take the full responsibility for the development and hosting of your website or your application. We totally believe in working with modern technologies and trending styles. Let us make the slogan <strong>Vocal For Local</strong> real. </p><br/>
                 <Grid container >
                     <Grid item xs={12} md={6} className="gridContent">
-                    <ImgMediaCard data={this.state.data[0]}/>
+                    <a href="https://www.linkedin.com/in/shail-raval-6a513b139/" style={{textDecoration:'none'}}><ImgMediaCard data={this.state.data[0]}/></a>
                     </Grid>
                     <Grid item xs={12} md={6} className="gridContent">
-                    <ImgMediaCard data={this.state.data[1]}/>
+                    <a href="https://www.linkedin.com/in/meetpatel19/" style={{textDecoration:'none'}}><ImgMediaCard data={this.state.data[1]}/></a>
                     </Grid>
                 </Grid>
                 
@@ -60,8 +62,8 @@ function ImgMediaCard(props) {
             <Typography gutterBottom variant="h5" component="h2">
               {props.data.name}
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              
+            <Typography variant="h6" color="textSecondary" component="h3">
+              Software Developer
             </Typography>
           </CardContent>
         </CardActionArea>

@@ -9,11 +9,12 @@ import ScrollHandlerComponent from './Components/ScrollHandlerComponent';
 
 function App() {
   return (
-    <div className="App" style={{ overflowX: 'hidden', width: '100vw' }}>
+    <div className="App" style={{fontFamily: 'Raleway sans-serif', overflowX: 'hidden', width: '100vw' }}>
       <Router>
       <ScrollHandlerComponent />
         <HeaderComponent/>
         <Switch>
+        <Route path='/' exact component={RouterComponent} />
           <Route path='/home' component={RouterComponent} />
           <Route path="/speedwell" component={SpeedwellComponent} />
           <Route path="/nutan" component={NutanComponent} />
