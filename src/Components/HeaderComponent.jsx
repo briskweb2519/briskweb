@@ -116,7 +116,7 @@ const CreateDrawer = (props) => {
               onClick={() => { props.updateState(true) }}
               style={{ color: props.status === 'top' ? "white" : "black" }} />
             <Typography variant="h6" className={classes.title}>            
-            <Link to="/#home" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>WOLFPACK</Link>
+            <Link to="/#home" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>BRISKWEB</Link>
             </Typography>
           </Grid>
         </Toolbar>
@@ -161,7 +161,7 @@ const DestroyDrawer = (props) => {
         <Toolbar className={classes.toolBar}>
           {/* <img src={logo} alt="logo" width='3%'/> */}
           <Typography variant="h6" className={classes.title}>
-            <Link to="/#home" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>WOLFPACK</Link>
+            <Link to="/#home" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>BRISKWEB</Link>
           </Typography>
           <Button color="inherit"><Link to="/#projects" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Projects </Link></Button>
           <Button color="inherit"><Link to="/#services" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Services </Link></Button>
