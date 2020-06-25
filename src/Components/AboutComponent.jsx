@@ -7,7 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import { Grid } from '@material-ui/core';
 import Shail from '../Images/Shail.jpeg'
-import Meet from '../Images/Meet.jpeg'
+import Meet from '../Images/Meet.jpg'
 import { Link } from 'react-router-dom';
 const useStyles = makeStyles({
     root: {
@@ -54,7 +54,7 @@ function ImgMediaCard(props) {
           <CardMedia
             component="img"
             alt={props.data.name}
-            style={{height:"50vh"}}
+            style={{height:"60vh"}}
             image={props.data.img}
             title={props.data.name}
           />
