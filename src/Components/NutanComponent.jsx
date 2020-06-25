@@ -45,7 +45,7 @@ function ComplexGrid(props) {
               <h1>{data.name}</h1>
               <h3>{data.description} | {data.place}</h3>
               <h3>Implementation</h3>
-              <Button onClick={window.open("https://nutan.herokuapp.com/Nutan","_blank")} style={{ marginTop: '2%' }} variant="contained" color="primary">
+              <Button href="https://nutan.herokuapp.com/Nutan" style={{ marginTop: '2%' }} variant="contained" color="primary">
                 Visit Website &nbsp; <ArrowRightAltOutlinedIcon />
               </Button>
             </Grid>
