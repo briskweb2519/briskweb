@@ -8,11 +8,12 @@ import Typography from '@material-ui/core/Typography';
 import { Grid } from '@material-ui/core';
 import Shail from '../Images/Shail.jpeg'
 import Meet from '../Images/Meet.jpg'
+import Parth from '../Images/Parth.jpg'
 import { Link } from 'react-router-dom';
 const useStyles = makeStyles({
     root: {
-      width: 345,
-      marginTop:'4%',
+      width: 300,
+      margin:'4%',
     },
   });
 
@@ -22,7 +23,8 @@ class AboutComponent extends Component{
         this.state = {
             data:[
                 {id:1, name:'Shail Raval', img: Shail},
-                {id:2, name:'Meet Patel', img: Meet}
+                {id:2, name:'Meet Patel', img: Meet},
+                {id:3, name:'Parth Parmar', img: Parth}
             ]
         }
     }
@@ -32,11 +34,14 @@ class AboutComponent extends Component{
                 <p style={{fontSize:'40px', textAlign:'left'}}><strong>Team</strong></p>
                 <p style={{fontSize:'20px' , textAlign:'justify'}}> We are full stack developers. We focus on taking your business online and help them grow. We take the full responsibility for the development and hosting of your website or your application. We totally believe in working with modern technologies and trending styles. Let us make the slogan <strong>Vocal For Local</strong> real. </p><br/>
                 <Grid container >
-                    <Grid item xs={12} md={6} className="gridContent">
+                    <Grid item xs={12} md={4} className="gridContent">
                     <a href="https://www.linkedin.com/in/shail-raval-6a513b139/" style={{textDecoration:'none'}}><ImgMediaCard data={this.state.data[0]}/></a>
                     </Grid>
-                    <Grid item xs={12} md={6} className="gridContent">
+                    <Grid item xs={12} md={4} className="gridContent">
                     <a href="https://www.linkedin.com/in/meetpatel19/" style={{textDecoration:'none'}}><ImgMediaCard data={this.state.data[1]}/></a>
+                    </Grid>
+                    <Grid item xs={12} md={4} className="gridContent">
+                    <a href="https://www.linkedin.com/in/parth-parmar-8aa318108/" style={{textDecoration:'none'}}><ImgMediaCard data={this.state.data[2]}/></a>
                     </Grid>
                 </Grid>
                 
@@ -54,7 +59,7 @@ function ImgMediaCard(props) {
           <CardMedia
             component="img"
             alt={props.data.name}
-            style={{height:"60vh"}}
+            style={{height:"50vh"}}
             image={props.data.img}
             title={props.data.name}
           />

@@ -38,13 +38,13 @@ export default class ContactComponent extends Component {
     }
 
     handleSubmit() {
-        const templateId = 'template_S4FIQB8o';
+        const templateId = 'template_7xptVovv';
         this.sendFeedback(templateId, { name: this.state.name, email: this.state.email,project : this.state.project, message: this.state.message })
     }
 
     sendFeedback (templateId, variables) {
         window.emailjs.send(
-          'wewolfpack', templateId,
+          'briskweb', templateId,
           variables
           ).then(res => {
             alert("We have recieved your request. We wil get back to you soon.")
@@ -95,7 +95,7 @@ export default class ContactComponent extends Component {
                         </Button>
                     </div>
                     <div style={{fontSize:'20px'}}>
-                        <p>Alternatively you can send an e-mail to <a href="wewolfpack2519@gmail.com">wewolfpack2519@gmail.com</a></p>
+                        <p>Alternatively you can send an e-mail to <strong>briskweb2519@gmail.com</strong></p>
                         <p>Shail Raval : +917600991213</p>
                         <p>Meet Patel : +919638409065</p>
                     </div>

@@ -141,7 +141,7 @@ const CreateDrawer = (props) => {
           <Link to="/#services" color="inherit" style={{ color : 'black',textDecoration: 'none' }}><ListItem key={2} button divider>Services </ListItem> </Link>
           <Link to="/#details" color="inherit" style={{ color : 'black',textDecoration: 'none' }}><ListItem key={2} button divider>Details  </ListItem> </Link>
           <Link to="/#technology" color="inherit" style={{ color : 'black',textDecoration: 'none' }}><ListItem key={3} button divider>Technology </ListItem> </Link>
-          <Link to="/#about" color="inherit" style={{ color : 'black',textDecoration: 'none' }}><ListItem key={4} button divider>About Us </ListItem> </Link>
+          <Link to="/#about" color="inherit" style={{ color : 'black',textDecoration: 'none' }}><ListItem key={4} button divider>About </ListItem> </Link>
           <Link to="/#contact" color="inherit" style={{ color : 'black', textDecoration: 'none' }}><ListItem key={5} button divider>Contact  </ListItem> </Link>
           </List>
 
@@ -167,7 +167,7 @@ const DestroyDrawer = (props) => {
           <Button color="inherit"><Link to="/#services" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Services </Link></Button>
           <Button color="inherit"><Link to="/#details" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Details </Link></Button>
           <Button color="inherit"><Link to="/#technology" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Technologies </Link></Button>
-          <Button color="inherit"><Link to="/#about" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>About Us </Link></Button>
+          <Button color="inherit"><Link to="/#about" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>About </Link></Button>
           <Button color="inherit"><Link to="/#contact" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Contact </Link></Button>
         </Toolbar>
       </AppBar>

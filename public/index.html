@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/logo_black1.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="We will take your business online (Vocal for Local)"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo_black.png" />
-     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway&display=swap" rel="stylesheet">
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/logo_black.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="We will take your business online (Vocal for Local)" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo_black.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway&display=swap" rel="stylesheet">
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function(){
-          emailjs.init("user_9ccPdGXa1i0cU3Mm60SQS");
-      })();
-    </script>
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_sO9C00vJm3jHpqPJFnwme");
+    })();
+  </script>
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -32,12 +30,13 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>BRISKWEB</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  <title>BRISKWEB</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -47,5 +46,31 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+<script src="/__/firebase/init.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCW8XxDZkS6hgnqLRAzNrTVc8AtlleFqSw",
+    authDomain: "briskweb-2d196.firebaseapp.com",
+    databaseURL: "https://briskweb-2d196.firebaseio.com",
+    projectId: "briskweb-2d196",
+    storageBucket: "briskweb-2d196.appspot.com",
+    messagingSenderId: "617810815310",
+    appId: "1:617810815310:web:e127c173283909fd81d61f",
+    measurementId: "G-YYQPH96S18"
+  };
+  // Initialize Firebase
+  
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+
 </html>

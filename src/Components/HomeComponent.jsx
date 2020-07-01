@@ -6,7 +6,7 @@ class HomeComponent extends Component {
         return (
             <div className="container" style={{backgroundColor:'black', color:'white',fontFamily: 'Cormorant Garamond serif'}} id="#home">
                 <div className="avatar">
-                    <img src={Logo} alt="Logo" />
+                    <img src={Logo} alt="Logo" style={{height:'150px', width:'30%'}}/>
                 </div>
                 <h1>BRISKWEB</h1>
                 <h2>We will take your business online</h2>
