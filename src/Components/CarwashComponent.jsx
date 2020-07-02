@@ -32,7 +32,7 @@ export default class CarwashComponent extends Component {
     super(props)
     this.state = {
       data: [
-        { id: 1, img1: C15, img2: C14, img3: C1, name: "Carwash", description: "Service | Application", place: "Ahmedabad"},
+        { id: 1, img1: C14, img2: C15, img3: C1, name: "Carwash", description: "Service | Application", place: "Ahmedabad"},
       ]
     }
   }
