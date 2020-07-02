@@ -68,6 +68,20 @@
 	transform: translate(-2%,-160%);
 }
 
+.trans5{
+	-webkit-transform: translate(140%,-90%);
+	-ms-transform: translate(140%,-90%);
+	-o-transform: translate(140%,-90%);
+	transform: translate(230%,-90%);
+	
+}
+
+.trans6{
+	-webkit-transform: translate(120%,-170%);
+	-ms-transform: translate(120%,-170%);
+	-o-transform: translate(120%,-170%);
+	transform: translate(120%,-170%);
+}
 .avatar img { width: 100%; }
 
 .trans{

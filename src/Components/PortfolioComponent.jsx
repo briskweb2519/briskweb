@@ -8,9 +8,9 @@ import Speedwell3 from '../Images/speedwell/speedwell4.png'
 import Nutan1 from '../Images/Nutan/Nutan1b.png'
 import Nutan2 from '../Images/Nutan/Nutan2b.png'
 import Nutan3 from '../Images/Nutan/Nutan3a.png'
-import Nutan4 from '../Images/Nutan/Nutan4.png'
-import Nutan5 from '../Images/Nutan/Nutan5.png'
-import Nutan6 from '../Images/Nutan/Nutan6.png'
+import Carwash3 from '../Images/carwash/23.png'
+import Carwash2 from '../Images/carwash/9.png'
+import Carwash1 from '../Images/carwash/10.png'
 import ArrowRightAltOutlinedIcon from '@material-ui/icons/ArrowRightAltOutlined';
 import { Link } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
@@ -24,8 +24,9 @@ export default class PortfolioComponent extends Component {
     super(props)
     this.state = {
       data: [
-        { id: 1, img1: Nutan3, img2: Nutan2, img3: Nutan1, name: "Nutan Vastra Bhandar", description: "Online Shopping", place: "Ahmedabad", path: "/nutan" },
-        { id: 2, img1: Speedwell1, img2: Speedwell2, img3: Speedwell3, name: "Speedwell Cycle Industries", description: "Wholesale Supplier", place: "Ahmedabad", path: '/speedwell' },
+        { id: 1, img1: Nutan3, img2: Nutan2, img3: Nutan1, name: "Nutan Vastra Bhandar", description: "Online Shopping | Website", place: "Ahmedabad", path: "/nutan" },
+        { id: 2, img1: Speedwell1, img2: Speedwell2, img3: Speedwell3, name: "Speedwell Cycle Industries", description: "Wholesale Supplier | Website", place: "Ahmedabad", path: '/speedwell' },
+        { id: 3, img1: Carwash1, img2: Carwash2, img3: Carwash3, name: "Carwash", description: "Service | Application", place: "Ahmedabad", path: '/carwash' },
       ]
     }
   }
@@ -94,6 +95,32 @@ function ComplexGrid(props) {
             <div className="avatar">
               <div className="trans">
                 <img alt="complex" className="trans4" src={props.data[1].img1} style={{ width: '40%', border: '1px solid', position: 'absolute' }} />
+              </div>
+            </div>
+          </Grid>
+        </Grid>
+      </Link>
+      <Link style={{ textDecoration: 'none', color: 'black' }} to={props.data[2].path}>
+        <Grid container>
+          <Grid item xs={12} md={6} style={{ textAlign: 'left', paddingBottom: '10%' }}>
+            <h1>{props.data[2].name}</h1>
+            <h3>{props.data[2].description} | {props.data[2].place}</h3>
+            <Link to="/carwash" style={{textDecoration:'none'}}><Button style={{ marginTop: '2%' }} variant="contained" color="primary">
+                View Project &nbsp; <ArrowRightAltOutlinedIcon />
+              </Button></Link>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <div className="trans">
+              <img alt="complex" src={props.data[2].img3} style={{ width: '40%', border: '1px solid' }} />
+            </div>
+            <div className="avatar">
+              <div className="trans">
+                <img alt="complex" className="trans5" src={props.data[2].img2} style={{ width: '30%', border: '1px solid' }} />
+              </div>
+            </div>
+            <div className="avatar">
+              <div className="trans">
+                <img alt="complex" className="trans6" src={props.data[2].img1} style={{ width: '30%', border: '1px solid', position: 'absolute' }} />
               </div>
             </div>
           </Grid>

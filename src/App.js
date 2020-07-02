@@ -6,6 +6,7 @@ import SpeedwellComponent from './Components/SpeedwellComponent';
 import NutanComponent from './Components/NutanComponent';
 import HeaderComponent from './Components/HeaderComponent';
 import ScrollHandlerComponent from './Components/ScrollHandlerComponent';
+import CarwashComponent from './Components/CarwashComponent';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' exact component={RouterComponent} />
           <Route path="/speedwell" component={SpeedwellComponent} />
           <Route path="/nutan" component={NutanComponent} />
+          <Route path="/carwash" component={CarwashComponent} />
         </Switch>
       </Router>
     </div>
