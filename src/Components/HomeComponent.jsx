@@ -11,7 +11,7 @@ class HomeComponent extends Component {
                 {/* <h1>BRISKWEB</h1>
                 <h2>We will take your business online</h2> */}
                 <div className="maincontainer" style={{padding : '5%'}}>
-                <h2> Briskweb is a Software Development Company to develop website and application for your business and help it expand with the tools of digital marketing</h2>
+                <h2> Briskweb is a Software Development Company to develop websites and applications for your business and help it expand with the tools of digital marketing</h2>
                 </div>
             </div>
         )
