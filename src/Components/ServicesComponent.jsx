@@ -6,10 +6,12 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import { Grid } from '@material-ui/core';
-import Website from '../Images/Web.jpg'
-import App from '../Images/App.jpg'
-import Deploy from '../Images/hosting.png'
-import Maintain from '../Images/maintain.jpeg'
+import Website from '../Images/2.jpg'
+import App from '../Images/1.jpg'
+import Digital from '../Images/3.jpg'
+// import Deploy from '../Images/2.png'
+// import Maintain from '../Images/maintain.jpeg'
+
 const useStyles = makeStyles({
     root: {
       width: '100%',
@@ -24,8 +26,9 @@ class ServicesComponent extends Component{
             data:[
                 {id:1, name:'Website Development', img: Website},
                 {id:2, name:'Application Development', img: App},
-                {id:1, name:'Deployment', img: Deploy},
-                {id:2, name:'Maintenance', img: Maintain}
+                {id:3, name:'Digital Marketing', img: Digital},
+                // {id:1, name:'Deployment', img: Deploy},
+                // {id:2, name:'Maintenance', img: Maintain}
             ]
         }
     }
@@ -35,21 +38,24 @@ class ServicesComponent extends Component{
                 <p style={{fontSize:'40px', textAlign:'left'}}><strong>Services</strong></p>
                 <p style={{fontSize:'20px' , textAlign:'justify'}}> We accept the responsibilities for developing website and applications. We are here to design, develop, deploy, and maintain the project for your better reach. </p><br/>
                 <Grid container >
-                    <Grid item xs={12} md={6} className="gridContent" style={{padding:'3%'}}>
+                    <Grid item xs={12} md={4} className="gridContent" style={{padding:'3%'}}>
                     <ImgMediaCard data={this.state.data[0]}/>
                     </Grid>
-                    <Grid item xs={12} md={6} className="gridContent" style={{padding:'3%'}}>
+                    <Grid item xs={12} md={4} className="gridContent" style={{padding:'3%'}}>
                     <ImgMediaCard data={this.state.data[1]}/>
                     </Grid>
+                    <Grid item xs={12} md={4} className="gridContent" style={{padding:'3%'}}>
+                    <ImgMediaCard data={this.state.data[2]}/>
                     </Grid>
-                <Grid container direction="row" alignItems='stretch' >
+                    </Grid>
+                {/* <Grid container direction="row" alignItems='stretch' >
                     <Grid item xs={12} md={6} className="gridContent" style={{padding:'3%'}}>
                     <ImgMediaCard data={this.state.data[2]}/>
                     </Grid>
                     <Grid item xs={12} md={6} className="gridContent" style={{padding:'3%'}}>
                     <ImgMediaCard data={this.state.data[3]}/>
                     </Grid>
-                </Grid>
+                </Grid> */}
                 
             </div>
         )
@@ -60,7 +66,7 @@ function ImgMediaCard(props) {
     const classes = useStyles();
   
     return (
-      <Card className={classes.root}classes="maincontainer">
+      <Card className={classes.root} elevation={0} classes="maincontainer">
         <CardActionArea>
           <CardMedia
             component="img"

@@ -12,11 +12,11 @@ export default class RouterComponent extends Component {
         return (
             <>
                 <HomeComponent />
-                <PortfolioComponent />
+                <AboutComponent />
                 <Services />
+                <PortfolioComponent />
                 <Details />
                 <TechnologyComponent />
-                <AboutComponent />
                 <ContactComponent />
             </>
         )

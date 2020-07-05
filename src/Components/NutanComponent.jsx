@@ -79,7 +79,7 @@ function ComplexGrid(props) {
           </div>
           <div style={{ marginTop: '3%' }}>
             <strong> Implementation <br /></strong>
-              To achieve the state-of-the-art responsive website, the most effective tools were choosen. The project was implemeneted using React, Node and MognoDB with the styling of Material UI and React Bootstrap. Heroku takes care of the deployment of the website in trial mode and then it will be shifted to digital ocean.
+              To achieve the state-of-the-art responsive website, the most effective tools were choosen. The project was implemeneted using React, Node and MongoDB with the styling of Material UI and React Bootstrap. Heroku takes care of the deployment of the website in trial mode and then it will be shifted to digital ocean.
             </div>
           <div style={{ marginTop: '3%' }}>
             <strong> Tools / Services <br /></strong>

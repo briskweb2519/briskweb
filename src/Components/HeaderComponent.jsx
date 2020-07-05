@@ -137,11 +137,11 @@ const CreateDrawer = (props) => {
             <Button onClick={() => {props.updateState(false)}} style={{fontSize:'18px'}}> X </Button> 
             </div>
           <List className={classes.list}>
-          <Link to="/#projects" color="inherit" style={{color : 'black',textDecoration: 'none' }}><ListItem key={1} button divider>Projects </ListItem> </Link> 
+          <Link to="/#about" color="inherit" style={{color : 'black',textDecoration: 'none' }}><ListItem key={1} button divider>About </ListItem> </Link> 
           <Link to="/#services" color="inherit" style={{ color : 'black',textDecoration: 'none' }}><ListItem key={2} button divider>Services </ListItem> </Link>
-          <Link to="/#details" color="inherit" style={{ color : 'black',textDecoration: 'none' }}><ListItem key={2} button divider>Details  </ListItem> </Link>
-          <Link to="/#technology" color="inherit" style={{ color : 'black',textDecoration: 'none' }}><ListItem key={3} button divider>Technology </ListItem> </Link>
-          <Link to="/#about" color="inherit" style={{ color : 'black',textDecoration: 'none' }}><ListItem key={4} button divider>About </ListItem> </Link>
+          <Link to="/#projects" color="inherit" style={{ color : 'black',textDecoration: 'none' }}><ListItem key={2} button divider>Projects  </ListItem> </Link>
+          <Link to="/#details" color="inherit" style={{ color : 'black',textDecoration: 'none' }}><ListItem key={3} button divider>Details </ListItem> </Link>
+          <Link to="/#technology" color="inherit" style={{ color : 'black',textDecoration: 'none' }}><ListItem key={4} button divider> Technology</ListItem> </Link>
           <Link to="/#contact" color="inherit" style={{ color : 'black', textDecoration: 'none' }}><ListItem key={5} button divider>Contact  </ListItem> </Link>
           </List>
 
@@ -163,11 +163,11 @@ const DestroyDrawer = (props) => {
           <Typography variant="h6" className={classes.title}>
             <Link to="/#home" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>BRISKWEB</Link>
           </Typography>
-          <Button color="inherit"><Link to="/#projects" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Projects </Link></Button>
-          <Button color="inherit"><Link to="/#services" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Services </Link></Button>
-          <Button color="inherit"><Link to="/#details" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Details </Link></Button>
-          <Button color="inherit"><Link to="/#technology" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Technologies </Link></Button>
           <Button color="inherit"><Link to="/#about" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>About </Link></Button>
+          <Button color="inherit"><Link to="/#services" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Services </Link></Button>
+          <Button color="inherit"><Link to="/#projects" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Projects </Link></Button>
+          <Button color="inherit"><Link to="/#details" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Details </Link></Button>
+          <Button color="inherit"><Link to="/#technology" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Technology </Link></Button>
           <Button color="inherit"><Link to="/#contact" style={{ color: props.status === 'top' ? "white" : "black", textDecoration: 'none' }}>Contact </Link></Button>
         </Toolbar>
       </AppBar>
