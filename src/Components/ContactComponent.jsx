@@ -9,13 +9,13 @@ function FormControlLabelPlacement(props) {
             <RadioGroup row aria-label="position" name="position" defaultValue="top" >
                 <Grid container>
                     <Grid item xs={12} md={4}>
-                        <FormControlLabel name="project" value="website" control={<Radio color="primary" />} label="Website" onChange={props.onHandleChange} />
+                        <FormControlLabel name="project" value="Website" control={<Radio color="primary" />} label="Website/Application" onChange={props.onHandleChange} />
                     </Grid>
                     <Grid item xs={12} md={4}>
-                        <FormControlLabel name="project" value="web-application" control={<Radio color="primary" />} label="Web Application" onChange={props.onHandleChange}/>
+                        <FormControlLabel name="project" value="Web-Application" control={<Radio color="primary" />} label="Digital Marketing" onChange={props.onHandleChange}/>
                     </Grid>
                     <Grid item xs={12} md={4}>
-                        <FormControlLabel name="project" value="both" control={<Radio color="primary" />} label="Both" onChange={props.onHandleChange}/>
+                        <FormControlLabel name="project" value="Digital Marketing" control={<Radio color="primary" />} label="All" onChange={props.onHandleChange}/>
                     </Grid>
                 </Grid>
             </RadioGroup>
