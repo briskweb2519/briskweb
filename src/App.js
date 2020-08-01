@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGa from 'react-ga';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import RouterComponent from './Components/RouterComponent'
@@ -9,8 +10,9 @@ import ScrollHandlerComponent from './Components/ScrollHandlerComponent';
 import CarwashComponent from './Components/CarwashComponent';
 
 function App() {
+  ReactGa.initialize('G-W6J1CYKY3K');
   return (
-    <div className="App" style={{fontFamily: 'Raleway sans-serif', overflowX: 'hidden', width: '100vw' }}>
+    <div className="App" style={{fontFamily: 'Raleway sans-serif', overflowX: 'hidden' }}>
       <Router>
       <ScrollHandlerComponent />
         <HeaderComponent/>
